@@ -1,0 +1,15 @@
+print("My name is Shaurya.")
+print("My age is 8.")
+print("I study in Faria.")
+print("I love math.")
+print("I love basketball.")
+print(8)
+#This is a coomment.
+print("My sister's name is Aadya.")
+print("Her age is 11.")
+print("She studies at Kennedy.")
+print("She love ELA.")
+print("She loves Bartinatiam.")
+print(11)
+#This is a comment.
+print("")
