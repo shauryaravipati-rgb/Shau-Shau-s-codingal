@@ -1,33 +1,63 @@
-ord() #function returns ASCII Value
+#ord() function returns ASCII Value
 print(ord('A'))     #Output:65
 print(ord('a'))     #Output:97
 print(ord('O'))     #Output:48
 print(ord('@'))     #Output:64
-
-
 # chr()  function converts ASCII back to character
 print(chr(65))       #Output:A      
 print(chr(97))       #Output:a
-
 # Get input from user
 char = input("Enter a single character: ")
-
-
 #Validate: Check if exactly one character
 if type (char) is str and len(char) == 1:
     print(" Valid input!")
 else:
     print("Please enter exactly ONE character")
-
-
 # Get ASCII value
 ascii_val = ord(char)
-
 # Display the result
-print(f"Character: (char)")
-print(f"ASCII Value: ascii_val)
-      
-
+print("Character: (char)")
+print("ASCII Value: ascii_val")
 #Identify character type using ASCII ranges
-if ascii_val >= and ascii<= 90:
-    
+if ascii_val >=65 and ascii<= 90:
+    print("Type: Uppercase letter")
+elif ascii_val >= 97 and ascii_val <= 122:
+    print("Type:Lowercase letter")
+elif ascii_val >= 48 and ascii_val <= 57:
+    print("Type:Digit")
+elif ascii == 32:
+    print("Type:Space")
+else:
+    print("Type:Special Character")
+#ASCII Value Checker - Complete Program
+print("ASCII VAlue Checker")
+print("=" * 40)
+# input
+char = input("Enter a single character")
+#Validate input
+if type (char) is str  and len(char):
+    #Get ASCII value
+    ascii_val = ord(char)
+    #Display results
+    print("/nCharater:  '{char}'")
+    print("ASCII Value: {ascii_val}")
+    #Identity type
+    print("/nCharacter Type: ", end="")
+    if ascii_val >=65 and ascii_val <= 90:
+        print("Uppercase Letter")
+    elif ascii >= 97 and ascii <= 122:
+        print("Lowercase Letter")
+    elif ascii >= 48 and ascii <= 57:
+        print("Digit")
+    elif ascii == 32:
+        print("Space")
+    else:
+        print("Special Character")
+else:
+    print("/nError:Please enter exactly ONE character!")
+#Test Case 1: Uppercase letter
+#Inpput:A
+#Expected :ASCII =65,Type =Uppercase Letter
+
+
+
