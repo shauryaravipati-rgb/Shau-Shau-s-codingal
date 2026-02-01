@@ -7,7 +7,7 @@ print(ord('@'))     #Output:64
 print(chr(65))       #Output:A      
 print(chr(97))       #Output:a
 # Get input from user
-char = input("Enter a single character: ")
+char = input("Enter a single character:")
 #Validate: Check if exactly one character
 if type (char) is str and len(char) == 1:
     print(" Valid input!")
@@ -45,18 +45,18 @@ if type (char) is str  and len(char):
     print("/nCharacter Type: ", end="")
     if ascii_val >=65 and ascii_val <= 90:
         print("Uppercase Letter")
-    elif ascii >= 97 and ascii <= 122:
+    elif ascii_val >= 97 and ascii_val <= 122:
         print("Lowercase Letter")
-    elif ascii >= 48 and ascii <= 57:
+    elif ascii_val >= 48 and ascii_val <= 57:
         print("Digit")
-    elif ascii == 32:
+    elif ascii_val == 32:
         print("Space")
     else:
         print("Special Character")
 else:
     print("/nError:Please enter exactly ONE character!")
 #Test Case 1: Uppercase letter
-#Inpput:A
+#Input:A
 #Expected :ASCII =65,Type =Uppercase Letter
 
 
